@@ -2,7 +2,7 @@
 
 Windows Imaging Utility is a standalone Windows application for disk imaging, Windows image deployment, and offline image servicing. It provides a graphical interface for common WIM and FFU workflows while using Windows' built-in deployment and storage tools underneath.
 
-The application is designed for use on full Windows and does not depend on WinPeGUI or any companion picker, BitLocker, or shell executables.
+The application is designed for use on Windows.
 
 ## Features
 
@@ -40,7 +40,7 @@ The application is designed for use on full Windows and does not depend on WinPe
 
 Windows Imaging Utility is capable of destructive disk operations. Review the selected source, target, disk number, partition, and image before confirming an operation.
 
-When running in full Windows, the utility protects the currently running Windows installation from operations that would overwrite or repartition it. In particular, FFU apply/capture and whole-disk WIM deployment are blocked against the live Windows disk, and WIM capture/apply is blocked against the running Windows partition where appropriate.
+When running in Windows, the utility protects the currently running Windows installation from operations that would overwrite or repartition it. In particular, FFU apply/capture and whole-disk WIM deployment are blocked against the live Windows disk, and WIM capture/apply is blocked against the running Windows partition where appropriate.
 
 The utility does not move or replace the host system's `C:` drive assignment. Temporary drive letters used during deployment are released after the operation completes.
 
