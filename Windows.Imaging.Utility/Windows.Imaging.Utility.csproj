@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Authors>Dan Michel</Authors>
+    <Copyright>Copyright © 2026 Dan Michel</Copyright>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>Windows.Imaging.Utility.Program</StartupObject>
+    <AssemblyName>WindowsImagingUtility</AssemblyName>
+    <RootNamespace>Windows.Imaging.Utility</RootNamespace>
+    <AssemblyTitle>Windows Imaging Utility</AssemblyTitle>
+    <Product>Windows Imaging Utility</Product>
+    <Description>Standalone Windows disk, FFU, WIM, and offline servicing utility.</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishReadyToRun>false</PublishReadyToRun>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Imaging.Core\Imaging.Core.csproj" />
+  </ItemGroup>
+</Project>
